@@ -33,11 +33,23 @@ const Hero = () => {
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I'm a JS Developer with Great Experience and Skill in :
-            <br className="sm:block" />{" "}
+            <br className="sm:block hidden" />{" "}
             <span className="text-[#915eff]">
               React-JS, React-Native, Three-JS, and Next-JS{" "}
             </span>
           </p>
+        </div>
+        <div className="flex flex-col justify-center items-center mt-5">
+          {/* Line */}
+          <div
+            id="line"
+            className="w-1 h-40 sm:h-80 violet-gradient-opp "
+          />
+          {/* circle */}
+          <div
+            className="h-5 w-5 rounded-full bg-[#915eff]"
+            id="circle"
+          ></div>
         </div>
       </div>
     </section>

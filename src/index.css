@@ -30,6 +30,9 @@
 .violet-gradient {
   @apply bg-gradient-to-b from-purple-700 via-purple-600 to-transparent;
 }
+.violet-gradient-opp {
+  @apply bg-gradient-to-t from-purple-700 via-purple-600 to-transparent;
+}
 
 .green-pink-gradient {
   background: "#00cea8";
