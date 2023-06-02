@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
@@ -74,7 +73,7 @@ const Navbar = () => {
                       key={link.id}
                       className={`${
                         active === link.title ? "text-white" : "text-secondary"
-                      } hover:text-white font-poppins text-[16px] font-medium cursor-pointer`}
+                      } hover:text-white font-Poppins text-[16px] font-medium cursor-pointer`}
                     >
                       <a
                         href={`#${link.id}`}
