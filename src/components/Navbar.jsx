@@ -66,7 +66,7 @@ const Navbar = () => {
             }}
           ></img>
           {toggle === true && (
-            <div className="flex p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl">
+            <div className="border-2 flex p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl">
               <ul className="list-none flex flex-col gap-4 items-center justify-end">
                 {navLinks.map((link) => {
                   return (
@@ -74,7 +74,7 @@ const Navbar = () => {
                       key={link.id}
                       className={`${
                         active === link.title ? "text-white" : "text-secondary"
-                      } hover:text-white text-[18px] font-medium cursor-pointer`}
+                      } hover:text-white font-poppins text-[16px] font-medium cursor-pointer`}
                     >
                       <a
                         href={`#${link.id}`}
