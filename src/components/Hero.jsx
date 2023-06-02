@@ -1,7 +1,8 @@
+/* eslint-disable */
 import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import Computers from "./canvas/Computers";
+import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
   return (
@@ -32,13 +33,14 @@ const Hero = () => {
             <span className="text-[#915eff]">Emmanuel</span> here
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I'm a JS Developer with Great Experience and Skill in :
+            I&apos;m a JS Developer with Great Experience and Skill in :
             <br className="sm:block hidden" />{" "}
             <span className="text-[#915eff]">
               React-JS, React-Native, Three-JS, and Next-JS{" "}
             </span>
           </p>
         </div>
+        {/* Container with Circular & Line and Intro */}
         <div className="flex flex-col justify-center items-center mt-5">
           {/* Line */}
           <div
@@ -52,6 +54,7 @@ const Hero = () => {
           ></div>
         </div>
       </div>
+      <ComputersCanvas />
     </section>
   );
 };
